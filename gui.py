@@ -76,7 +76,7 @@ def on_listbox_click(event):
     selected_text = saved_texts_listbox.get(saved_texts_listbox.curselection())
     text_entry.delete(0, tk.END)  # Wyczyść istniejący tekst w text_entry
     text_entry.insert(tk.END, selected_text)  # Wstaw zaznaczony tekst z listy do text_entry
-    send_text_label.config(text="Text to send: " + selected_text)
+    send_text_label.config(text="Text to send: ")
 
 # odswiezanie portow po wpisaniu baudrate
 def refresh_ports(event=None):
